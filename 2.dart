@@ -9,6 +9,11 @@ void main() {
   }
 
   // Econtrando a soma dos números da lista
+  int sum = 0;
+  for (int num in arr) {
+    sum += num;
+  }
+  print("Soma: $sum");
 
   // Inicializando as variáveis com o index do array em 0 para evitar erros.
   int menor_num = arr[0];
@@ -27,4 +32,6 @@ void main() {
     }
   }
   print("Maior número: $maior_num");
+
+  print("Lista atualizada: $arr");
 }
